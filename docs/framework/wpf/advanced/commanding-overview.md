@@ -46,10 +46,10 @@ ms.lasthandoff: 05/04/2018
   
 <a name="simple_command"></a>   
 ## <a name="simple-command-example-in-wpf"></a>WPF의 간단한 명령 예제  
- 명령을 사용 하는 가장 간단한 방법은 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 미리 정의 된 사용 하 여 <xref:System.Windows.Input.RoutedCommand> 명령 라이브러리 클래스; 중 하나에서 한 명령을 처리 하는;에 대 한 기본 지원을 있는 컨트롤을 사용 하 고 명령을 호출 하는 데 기본적으로 지 원하는 컨트롤을 사용 합니다.  <xref:System.Windows.Input.ApplicationCommands.Paste%2A> 명령에서 미리 정의 된 명령 중 하나는 <xref:System.Windows.Input.ApplicationCommands> 클래스입니다.  <xref:System.Windows.Controls.TextBox> 컨트롤의 기본 제공 처리에 대 한 논리는 <xref:System.Windows.Input.ApplicationCommands.Paste%2A> 명령입니다.  및 <xref:System.Windows.Controls.MenuItem> 클래스에는 기본적으로 지 원하는 명령을 호출 합니다.  
-  
- 설정 하는 방법을 보여 주는 다음 예제는 <xref:System.Windows.Controls.MenuItem> 를 클릭 하면 호출 됩니다는 <xref:System.Windows.Input.ApplicationCommands.Paste%2A> 명령을 <xref:System.Windows.Controls.TextBox>되었다고 가정 하 고는 <xref:System.Windows.Controls.TextBox> 키보드 포커스가 합니다.  
-  
+ WPF에서 명령을 사용 하는 가장 간단한 방법은 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 미리 정의 된 사용 하 여 <xref:System.Windows.Input.RoutedCommand> 명령 라이브러리 클래스; 중 하나에서 한 명령을 처리 하는;에 대 한 기본 지원을 있는 컨트롤을 사용 하 고 명령을 호출 하는 데 기본적으로 지 원하는 컨트롤을 사용 합니다.  <xref:System.Windows.Input.ApplicationCommands.Paste%2A> 명령에서 미리 정의 된 명령 중 하나는 <xref:System.Windows.Input.ApplicationCommands> 클래스입니다.  <xref:System.Windows.Controls.TextBox> 컨트롤의 기본 제공 처리에 대 한 논리는 <xref:System.Windows.Input.ApplicationCommands.Paste%2A> 명령입니다.  및 <xref:System.Windows.Controls.MenuItem> 클래스에는 기본적으로 지 원하는 명령을 호출 합니다.
+ 
+ 다음 예제는 <xref:System.Windows.Controls.MenuItem> 를 설정하여 <xref:System.Windows.Controls.TextBox> 가 키보드 포커스를 얻었을 때 해당 아이템을 클릭하면  <xref:System.Windows.Input.ApplicationCommands.Paste%2A> 명령을 <xref:System.Windows.Controls.TextBox>에 호출하게 하는 것을 보여줍니다.
+ 
  [!code-xaml[CommandingOverviewSnippets#CommandingOverviewSimpleCommand](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewsimplecommand)]  
   
  [!code-csharp[CommandingOverviewSnippets#CommandingOverviewCommandTargetCodeBehind](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcommandtargetcodebehind)]
